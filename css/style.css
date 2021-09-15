@@ -28,6 +28,38 @@ Table of Contents
 /* ------------------------------
   General
 ---------------------------------*/
+
+.countup {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.countup .timeel {
+	text-align: center;
+  display: inline-block;
+  padding: 10px;
+  background: #151515;
+  margin: 0;
+  color: white;
+  min-width: 2.6rem;
+  margin-left: 13px;
+  margin-top: 13px;
+  border-radius: 10px 0 0 10px;
+
+}
+.countup span[class*="timeRef"] {
+  border-radius: 0 10px 10px 0;
+  margin-left: 0;
+  background: #e8c152;
+  color: black;
+}
+
+.countup span[class*="expression"] {
+  border-radius: 0 10px 10px 0;
+  margin-left: 0;
+  color: black;
+  background: #FFFFFF;
+}
+
 body {
 	margin: 0;
 	font-size: 13px;
@@ -294,6 +326,10 @@ textarea.materialize-textarea:focus:not([readonly]) {
 
 .side-nav li.active {
 	background: #fbfbfb;
+}
+
+.side-nav li.passive {
+	background: #808080;
 }
 
 .side-nav-panel-left {
@@ -942,6 +978,11 @@ textarea.materialize-textarea:focus:not([readonly]) {
 	color: #fff;
 }
 
+.pagination-blog-home ul .passive {
+	border-color: #34edc4;
+	background: #808080;
+	color: #fff;
+}
 .pagination-blog-home ul .active a {
 	color: #fff;
 }
@@ -1030,6 +1071,9 @@ textarea.materialize-textarea:focus:not([readonly]) {
 .footer {
 	background: #111111;
 	padding: 35px 0;
+	position: relative;
+	width: 100%;
+	bottom:0;
 }
 
 .about-us-foot {
@@ -1084,3 +1128,4 @@ textarea.materialize-textarea:focus:not([readonly]) {
 	color: #eeeeee;
 	text-align: center;
 }
+
